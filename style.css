@@ -11,6 +11,10 @@ img {
   width: 250px;
   height: 250px;
 }
+h1 {
+  font-size: 38px;
+  text-transform: capitalize;
+}
 .space-bottom-8 {
   margin-bottom: 8rem;
 }
@@ -84,10 +88,6 @@ button:hover {
   display: inline;
   text-transform: capitalize;
 }
-.section-1-right h1 {
-  font-size: 38px;
-  text-transform: capitalize;
-}
 .section-1-right > div:nth-of-type(1) {
   display: flex;
   justify-content: center;
@@ -139,7 +139,13 @@ button:hover {
 .section-2-card {
   display: flex;
 }
-
+.bxs-chevron-left,
+.bxs-chevron-right {
+  background-color: #f2ae30;
+  border-radius: 50%;
+  font-size: 32px;
+  margin: 0.5rem;
+}
 .section-3 {
   text-align: center;
 }
