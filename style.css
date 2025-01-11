@@ -3,7 +3,7 @@
   /* margin: 0; */
   padding: 0;
   font-size: 18px;
-  color: #a1a2a6;
+  color: #024959;
   font-family: "DM Serif Text", serif;
 }
 
@@ -11,7 +11,12 @@ img {
   width: 250px;
   height: 250px;
 }
-
+.space-bottom-8 {
+  margin-bottom: 8rem;
+}
+.space-bottom-4 {
+  margin-bottom: 4rem;
+}
 body {
   margin-left: 4rem;
   margin-right: 4rem;
@@ -36,27 +41,79 @@ nav ul {
   justify-content: space-between;
   list-style: none;
 }
-nav button {
+/*All button are design here*/
+button {
   background-color: #f2ae30;
   border: none;
-  padding: 0 1.5rem;
-  border-radius: 18%;
-  font-weight: 600;
+  height: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 12%;
+  font-weight: 500;
+  width: fit-content;
 }
-nav button:hover {
+button:hover {
   cursor: pointer;
   background-color: #f2c12e;
 }
-
+/*--------------------------------*/
 .section-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.space-bottom-8 {
-  margin-bottom: 8rem;
+.section-1-left {
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
-.space-bottom-4 {
-  margin-bottom: 4rem;
+.section-1-left img:first-of-type {
+  border-radius: 50px;
+  height: 100%;
+  text-align: center;
+  width: 40%;
+}
+.section-1-left img:first-of-type ~ img {
+  border-radius: 25px;
+  height: 60%;
+  width: 30%;
+  position: absolute;
+  bottom: 2rem;
+  right: 8rem;
+}
+.section-1-right p:first-of-type {
+  color: #f2ae30;
+  display: inline;
+  text-transform: capitalize;
+}
+.section-1-right h1 {
+  font-size: 38px;
+  text-transform: capitalize;
+}
+.section-1-right > div:nth-of-type(1) {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  align-items: center;
+}
+.section-1-right > div:nth-of-type(1) > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+.section-1-right > div:nth-of-type(1) > div img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.bx-play-circle {
+  position: absolute;
+  color: #f2ae30;
+  background-color: #024959;
+  width: fit-content;
+  border-radius: 50%;
+  left: 35px;
+  bottom: 12px;
+  font-size: 28px;
 }
 .section-2-nav {
   align-items: center;
